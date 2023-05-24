@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.navbar-link {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-link:hover {
+  color: #000;
+}
+
+.navbar span {
+  font-size: 18px;
+}
+
+.navbar-logout:hover {
+  text-decoration: underline;
+}

@@ -3,7 +3,6 @@ const express = require("express");
 const path = require("path");
 const favicon = require("serve-favicon");
 const logger = require("morgan");
-const workoutRoutes = require("./routes/api/workouts");
 require("./config/database");
 
 const app = express();
@@ -30,7 +29,9 @@ app.use(require("./config/checkToken"));
 // //route
 // app.get("/test", testController)
 app.use("/api/users", require("./routes/api/users"));
-app.use("/api/workouts", workoutRoutes);
+// Protect the API routes below from anonymous users
+const ensureLoggedIn = require("./config/ensureLoggedIn");
+app.use("/api/workouts", ensureLoggedIn, require("./routes/api/workouts"));
 
 // The following "catch all" route (note the *) is necessary
 // to return the index.html on all non-AJAX requests

@@ -21,7 +21,7 @@ function App() {
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/workouts/new" element={<NewWorkoutPage />} />
             <Route path="/workouts" element={<WorkoutHistoryPage />} />
           </Routes>
