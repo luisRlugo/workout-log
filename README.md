@@ -8,6 +8,8 @@ Full Mern Webiste, Where a user is able to Login or create an account. Once in t
 
 ## Demo
 
+https://workout-log-zen0.onrender.com
+
 ## Motivation
 
 Other than anime I love to go to the gym and this website is a great way of tracking my workouts so I can remember and keep a log of what I hit.
@@ -27,5 +29,3 @@ Add the edit function, add another form for cardio based workouts, Add more styl
 ## To Do list
 
 https://trello.com/b/zYIXbsfi/fitness-log
-
-I
